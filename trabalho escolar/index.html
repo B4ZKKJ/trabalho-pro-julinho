@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <title>trabalho escolar</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=shopping_cart" />
+</head>
+
+<body>
+    <div class="sobretudo"></div>
+    <div class="addProducts">
+        <h2>Adicionar Produtos</h2>
+        <form id="productForm">
+            <input type="text" id="productTitle" placeholder="Título do Produto" maxlength="15" required> <br>
+            <input id="productDescription" placeholder="Descrição do Produto" maxlength="100" required></textarea> <br>
+            <input type="url" id="productImage" placeholder="URL da Imagem" required> <br>
+            para transformar img em url acesse: <a
+                style="cursor: pointer; color: rgb(0, 238, 255);">https://imgur.com/</a>
+            <button type="button" onclick="addProdutos()">Adicionar Produto</button>
+        </form>
+        <div class="fechar" onclick="y_n_product(0)">+</div>
+    </div>
+
+
+    <nav>
+        <ul>
+            <li><a onclick="y_n_product(1)" style="cursor: pointer;">Adicionar Produtos</a></li>
+            <li><a href=""><span class="material-symbols-outlined">shopping_cart</span></a></li>
+        </ul>
+    </nav>
+
+    <section class="products">
+        <h1>Produtos</h1>
+
+        <ul>
+            <li>
+                <div class="item-shop">
+                    <img src="https://static.itdg.com.br/images/360-240/21fd76be3b29c3290859eda5220e0e32/323683-original.jpg"
+                        width="100%">
+                    <h2><span>Titulo</span></h2>
+                    <p><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, eum! consectetur
+                            adipisicing elit. Dicta, eum! </span></p>
+
+                    <button id="addCarrinho" onclick="indisponivel()">Adicionar ao Carrinho </button>
+                </div>
+            </li>
+            <li>
+                <div class="item-shop">
+                    <img src="https://static.itdg.com.br/images/360-240/21fd76be3b29c3290859eda5220e0e32/323683-original.jpg"
+                        width="100%">
+                    <h2><span>Titulo</span></h2>
+                    <p><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, eum! consectetur
+                            adipisicing elit. Dicta, eum! </span></p>
+
+                    <button id="addCarrinho" onclick="indisponivel()">Adicionar ao Carrinho </button>
+                </div>
+            </li>
+            <li>
+                <div class="item-shop">
+                    <img src="https://static.itdg.com.br/images/360-240/21fd76be3b29c3290859eda5220e0e32/323683-original.jpg"
+                        width="100%">
+                    <h2><span>Titulo</span></h2>
+                    <p><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, eum! consectetur
+                            adipisicing elit. Dicta, eum! </span></p>
+
+                    <button id="addCarrinho" onclick="indisponivel()">Adicionar ao Carrinho </button>
+                </div>
+            </li>
+        </ul>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
