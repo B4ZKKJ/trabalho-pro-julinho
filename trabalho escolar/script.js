@@ -28,8 +28,6 @@ function addProdutos() {
 
     if (title && description && image) {
         const productsList = document.querySelector('.products ul');
-
-        // Cria o item
         const newItem = document.createElement('li');
         newItem.innerHTML = `
                     <div class="item-shop">
@@ -39,11 +37,7 @@ function addProdutos() {
                         <button id="addCarrinho" onclick="indisponivel()">Adicionar ao Carrinho</button>
                     </div>
                 `;
-
-        // Adiciona o item à lista
         productsList.appendChild(newItem);
-
-        // Limpa os campos do formulário
         document.getElementById('productForm').reset();
 
         Swal.fire({
